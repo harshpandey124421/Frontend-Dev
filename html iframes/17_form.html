@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+</head>
+<body>
+    <h1>Submit Your Information</h1>
+    <form method="post" action="result.html" target="resultFrame">
+        <label for="usertext">Enter Text:</label>
+        <input type="text" id="usertext" name="usertext" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <br>
+    <iframe name="resultFrame" src="result.html" width="600" height="300" frameborder="1"></iframe>
+</body>
+</html>
