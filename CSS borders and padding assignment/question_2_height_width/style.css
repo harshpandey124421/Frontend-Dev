@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ecf0f1;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Flexbox for centering boxes vertically and horizontally */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Common box styling */
+.box {
+    border-radius: 15px;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.box p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Box 1 - using px units */
+.box1 {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+/* Box 2 - using % and vh units with max-width */
+.box2 {
+    width: 50%;
+    height: 30vh;
+    max-width: 400px;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* Box 3 - using em units, min-height, and overflow */
+.box3 {
+    width: 20em;
+    min-height: 250px;
+    max-height: 300px;
+    overflow: auto; /* Demonstrates overflow property */
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .box2 {
+        width: 90%;
+    }
+}
