@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: #f8f9fa;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+}
+
+main {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+article {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Heading styles with different font families and weights */
+article h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+/* Paragraph styling with line-height and letter-spacing */
+article p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    color: #333;
+}
+
+/* Pseudo-element ::first-letter for drop cap effect */
+article p.intro::first-letter {
+    font-size: 4rem;
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    margin-right: 0.1em;
+    color: #667eea;
+    font-family: 'Georgia', serif;
+}
+
+/* Pseudo-element ::first-line for emphasis */
+article p.intro::first-line {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+/* Custom styling for <strong> elements */
+strong {
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+/* Custom styling for <em> elements */
+em {
+    color: #3498db;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Custom styling for <mark> elements */
+mark {
+    background: #fff3cd;
+    color: #856404;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
