@@ -1,0 +1,29 @@
+/* Image showcase */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+figure {
+  position: relative;
+}
+
+img {
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px gray;
+  transition: 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+  filter: brightness(70%);
+}
+
+@media(max-width: 700px) {
+  .gallery {
+    flex-direction: column;
+  }
+}

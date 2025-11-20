@@ -1,0 +1,22 @@
+/* UI Components Card */
+
+body {
+  background: linear-gradient(lightblue, white);
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px gray;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input:focus, button:hover, select:focus {
+  border: 2px solid blue;
+}

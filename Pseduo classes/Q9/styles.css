@@ -1,0 +1,21 @@
+/* Combined transitions + transform */
+
+.row {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+
+.eff {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: lightgray;
+  transition: 0.3s;
+  box-shadow: 2px 2px 6px gray;
+}
+
+.eff:hover {
+  background: black;
+  color: white;
+  transform: scale(1.1);
+}

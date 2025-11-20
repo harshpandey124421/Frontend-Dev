@@ -1,0 +1,17 @@
+/* Element selector */
+p { color: black; }
+
+/* Class selector */
+.intro { color: blue; }
+
+/* ID selector */
+#special { color: red; }
+
+/* Descendant selector */
+ul li { font-weight: bold; }
+
+/* Adjacent sibling */
+p + ul { background: #eee; }
+
+/* Attribute selector */
+a[href] { text-decoration: underline; }

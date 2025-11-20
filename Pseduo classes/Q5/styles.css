@@ -1,0 +1,37 @@
+/* Button styles */
+
+.btn-wrap {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* Primary */
+.primary { background: blue; color: white; }
+.primary:hover { background: darkblue; }
+
+/* Secondary */
+.secondary { background: gray; color: white; }
+.secondary:hover { background: black; }
+
+/* Outline */
+.outline {
+  background: white;
+  border: 2px solid black;
+}
+.outline:hover {
+  background: black;
+  color: white;
+}
+
+/* Disabled */
+.disabled:disabled {
+  background: #ccc;
+  color: #666;
+}

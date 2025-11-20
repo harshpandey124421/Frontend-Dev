@@ -1,0 +1,29 @@
+/* Tooltip using CSS only */
+
+.wrap {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.tip-box {
+  position: relative;
+  padding: 10px;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 120%;
+  left: 0;
+  background: black;
+  color: white;
+  padding: 6px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tip-box:hover .tooltip {
+  opacity: 1;
+}
