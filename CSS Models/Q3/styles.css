@@ -1,0 +1,21 @@
+/* Gradient background demo */
+body { margin: 0; font-family: Arial; }
+
+header, footer {
+  background: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+}
+
+.linear {
+  height: 300px;
+  background: linear-gradient(to right, red, yellow);
+  background-attachment: fixed;
+}
+
+.radial {
+  height: 300px;
+  background: radial-gradient(circle, blue, lightblue);
+}

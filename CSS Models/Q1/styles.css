@@ -1,0 +1,27 @@
+/* Different border styles + padding demo */
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+.box-container {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  padding: 20px;
+  width: 120px;
+  text-align: center;
+  border-radius: 10px;
+  transition: border-color 0.4s;
+}
+
+.solid { border: 3px solid black; }
+.dashed { border: 3px dashed black; }
+.double { border: 5px double black; }
+.groove { border: 5px groove black; }
+
+.box:hover {
+  border-color: red;
+}

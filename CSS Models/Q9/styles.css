@@ -1,0 +1,19 @@
+/* Outline styling form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 250px;
+  padding: 20px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  outline: 3px solid gray;
+  outline-offset: 4px;
+}
+
+input:focus, textarea:focus {
+  outline-color: blue;
+}

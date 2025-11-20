@@ -1,0 +1,18 @@
+/* Attribute selectors */
+input[type="text"] { border: 2px solid blue; }
+
+/* Link starting with https */
+a[href^="https"] { color: green; }
+
+/* Pseudo classes */
+li:hover { color: red; }
+input:focus { background: lightyellow; }
+
+/* nth-child */
+li:nth-child(2) { font-weight: bold; }
+
+/* Pseudo-elements */
+li::before { content: "• "; color: gray; }
+
+/* Combinators */
+ul > li.special { background: #eee; }

@@ -1,0 +1,15 @@
+/* Typography demo */
+body { padding: 20px; font-family: Georgia; }
+
+.text {
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+mark { background: yellow; }
+strong { color: darkblue; }
+em { color: green; }
+
+.text::first-letter { font-size: 2em; }
+.text::first-line { font-weight: bold; }

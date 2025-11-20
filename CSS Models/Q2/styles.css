@@ -1,0 +1,33 @@
+/* Height & Width demonstration */
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+}
+
+.b1 {
+  width: 200px;
+  height: 100px;
+  background: lightblue;
+}
+
+.b2 {
+  width: 50%;
+  min-height: 150px;
+  background: lightgreen;
+}
+
+.b3 {
+  width: 10em;
+  max-width: 180px;
+  height: 30vh;
+  overflow: auto;
+  background: pink;
+}

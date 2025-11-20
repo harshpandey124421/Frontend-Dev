@@ -1,0 +1,22 @@
+/* Shadow & Depth demo */
+body { font-family: Arial; padding: 20px; }
+
+.heading { text-shadow: 2px 2px 4px gray; }
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  width: 150px;
+  padding: 20px;
+  background: white;
+  box-shadow: 2px 2px 8px gray;
+  transition: all 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 4px 4px 16px black;
+}
