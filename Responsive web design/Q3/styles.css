@@ -1,0 +1,32 @@
+/* Cards with media queries */
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background: lightgray;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.card:hover { background: gray; }
+
+/* Tablet */
+@media(max-width:900px){
+  .cards {
+    flex-wrap: wrap;
+  }
+  .card {
+    flex: 0 0 48%;
+  }
+}
+
+/* Mobile */
+@media(max-width:600px){
+  .card {
+    flex: 0 0 100%;
+  }
+}

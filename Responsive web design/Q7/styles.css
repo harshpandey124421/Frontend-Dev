@@ -1,0 +1,35 @@
+/* Combined responsive demo */
+
+.head, .foot {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(3,1fr);
+  animation: fade 1s ease-in;
+}
+
+.g1, .g2, .g3 {
+  background: lightgray;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.g1:hover, .g2:hover, .g3:hover {
+  background: gray;
+  color: white;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media(max-width:700px){
+  .grid { grid-template-columns: 1fr; }
+}

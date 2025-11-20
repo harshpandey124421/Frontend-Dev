@@ -1,0 +1,29 @@
+/* Flexbox responsive layout */
+
+body { margin: 0; font-family: Arial; padding: 20px; }
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.features {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  flex: 1;
+  padding: 20px;
+  background: lightgray;
+  transition: 0.3s;
+}
+
+.box:hover { transform: scale(1.05); }
+
+.foot { text-align: center; margin-top: 30px; }
+
+@media(max-width:750px){
+  .features { flex-direction: column; }
+}

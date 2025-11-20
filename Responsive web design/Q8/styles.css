@@ -1,0 +1,17 @@
+/* Before / After filter comparison */
+
+.compare {
+  display: flex;
+  gap: 20px;
+}
+
+.filtered {
+  filter: brightness(40%);
+  transition: 0.3s;
+}
+
+.filtered:hover { filter:none; }
+
+@media(max-width:700px){
+  .compare { flex-direction: column; }
+}

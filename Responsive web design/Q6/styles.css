@@ -1,0 +1,22 @@
+/* Responsive Grid cheat sheet */
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.box {
+  background: lightgray;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.box:hover {
+  background: gray;
+  color: white;
+}
+
+@media(max-width:700px){
+  .grid { grid-template-columns: 1fr; }
+}

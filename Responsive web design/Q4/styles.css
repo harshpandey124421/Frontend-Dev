@@ -1,0 +1,17 @@
+/* clamp() + responsive text */
+
+body { padding: 20px; font-family: Arial; }
+
+.text {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h1 { font-size: clamp(1.5rem, 4vw, 3rem); }
+
+p { font-size: clamp(1rem, 2vw, 1.5rem); }
+
+@media(max-width:700px){
+  p { line-height: 1.8; }
+}
