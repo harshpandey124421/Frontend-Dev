@@ -1,0 +1,1 @@
+JS Assignment 1 - Generated student-style JS files\nFolders: Q1 .. Q10 each contain a .js file.\nRun files in browser console or node, e.g. node Q1/Q1_personalized_greeting.js\n
